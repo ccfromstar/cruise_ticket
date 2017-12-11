@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>上海港邮轮登船凭证管理系统(SCSPMS)</title>
+
+		<link rel="stylesheet" href="../framework/amazeui/amazeui.min.css" />
+
+		<link rel="stylesheet" href="../framework/css/admin.css">
+		<script type="text/javascript">
+			function doPrint() {      
+			        bdhtml=window.document.body.innerHTML;      
+			        sprnstr="<!--startprint-->";      
+			        eprnstr="<!--endprint-->";      
+			        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);      
+			        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));      
+			        window.document.body.innerHTML=prnhtml;   
+			        window.print();      
+			}      
+		</script>
+	</head>
+
+	<body>
+		<p>
+			<button type='button' onclick='doPrint()' style='margin-left:20px;margin-top: 20px;' class='am-btn am-btn-default am-text-success'><span class='am-icon-print'></span> 打印</button>
+		</p>
+		<!--startprint-->
+		<img src="../framework/example.jpg" style="width:720px" >
+		<!--endprint-->  
+		<!--数据区域-->
+		<div id="ticket_date">
+			<!--<img src="../framework/Coata.png" style="position:fixed;top:100px;left:">-->
+		</div>
+	</body>
+
+</html>

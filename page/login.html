@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<title>上海港邮轮登船凭证管理系统(SCSPMS)</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="../framework/amazeui/amazeui.min.css" />
+		<script src="../framework/jquery-1.9.1.js"></script>
+		<style>
+			.header {
+				text-align: center;
+			}
+			
+			.header h1 {
+				font-size: 200%;
+				color: #333;
+				margin-top: 10px;
+			}
+			
+			.header p {
+				font-size: 14px;
+			}
+		</style>
+		<script type="text/javascript">
+			function login1(){
+				var username = $("#username").val();
+				var password = $("#password").val();
+				if(username == "歌诗达" && password == "66013699"){
+					window.location = 'import.html';
+				}else{
+					alert('账号或密码错误！');
+				}
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="am-g">
+				<br/><br/>
+				<img src="../framework/logo.png" style="width:100px">
+				<h1>上海港邮轮登船凭证管理系统(SCSPMS)</h1>
+				<p>ShangHai Cruise SetSail Pass Management System
+					<br/></p>
+			</div>
+			<hr />
+		</div>
+		<div class="am-g">
+			<div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+				<h3>登录</h3>
+				<hr>
+				<form method="post" class="am-form">
+					<label for="username">用户名:</label>
+					<input type="text" name="" id="username" value="">
+					<br>
+					<label for="password">密码:</label>
+					<input type="password" name="" id="password" value="">
+					<br>
+					<label for="remember-me">
+						<input id="remember-me" name="remember-me" type="checkbox" > 记住密码</input>
+					</label>
+					<br />
+					<br/>
+					<div class="am-cf">
+						<input type="button" id="login" onclick="login1()" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+					</div>
+				</form>
+				<hr>
+				<p>© 2017 上海国际邮轮旅游服务中心有限公司.</p>
+			</div>
+		</div>
+	</body>
+</html>
